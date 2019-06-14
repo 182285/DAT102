@@ -9,6 +9,7 @@ import no.hvl.dat102.Jobb;
 import no.hvl.dat102.JobbSamling;
 public class Kjoereplan1{
 	
+	
     public static void main(String[] args){
     	//Fyll ut
         Scanner tastatur = new Scanner(System.in);
@@ -26,7 +27,7 @@ public class Kjoereplan1{
         System.out.println("Datafil: " + filnavn);
         
         js.lesFraFil(filnavn);
-        antall = js.hentAntall();
+        antall = js.getAntall();
         
         System.out.println("antall " + antall);
         JobbSamling ferdige = new JobbSamling(antall);
